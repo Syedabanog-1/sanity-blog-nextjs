@@ -14,3 +14,11 @@ const eslintConfig = [
 ];
 
 export default eslintConfig;
+// .eslintrc.js
+module.exports = {
+  extends: ['next', 'next/core-web-vitals'],
+  rules: {
+    'no-console': 'off', // Disable no-console rule
+    'react/jsx-no-target-blank': 'off', // Disable JSX rule for target=_blank
+  },
+}

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { urlFor } from "../../sanity/sanity";
+import { urlFor } from "@/sanity/sanity";
 import Link from "next/link";
 import { Button } from "../ui/button";
 
