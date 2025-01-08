@@ -11,14 +11,11 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+    },
+  },
 ];
 
 export default eslintConfig;
-// .eslintrc.js
-module.exports = {
-  extends: ['next', 'next/core-web-vitals'],
-  rules: {
-    'no-console': 'off', // Disable no-console rule
-    'react/jsx-no-target-blank': 'off', // Disable JSX rule for target=_blank
-  },
-}
